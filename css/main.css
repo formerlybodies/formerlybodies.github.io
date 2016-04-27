@@ -60,6 +60,9 @@ header .right a:hover {
   height: 600px;
   border: none;
 }
+.top img{
+  height: 320px;
+}
 
 .about {
   text-align: center;
