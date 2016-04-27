@@ -3,7 +3,6 @@ body {
   background: #1a1a1a;
   color: white;
   font-family: "Handlee";
-  text-align: center;
 }
 
 header {
@@ -46,7 +45,8 @@ header .right a:hover {
 .container {
   border: solid white 1px;
   border-radius: 5px;
-  margin: 10px 30px;
+  margin: 10px auto;
+  width: 90%;
   padding: 10px 30px;
   height: 550px;
   display: flex;
@@ -63,6 +63,7 @@ header .right a:hover {
 }
 .top img{
   height: 820px;
+  margin: 0 auto;
 }
 
 .about {
