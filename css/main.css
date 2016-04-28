@@ -1,14 +1,17 @@
+@charset "UTF-8";
 body {
   margin: 0;
   background: #1a1a1a;
   color: white;
   font-family: "Handlee";
+  text-align: center;
 }
 
 header {
   font-family: "Short Stack";
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: black;
   position: fixed;
   width: 100%;
@@ -24,16 +27,59 @@ header .left a {
   text-decoration: none;
 }
 header .right {
+  position: absolute;
+  right: 0;
   padding: 5px;
   font-size: 1.1em;
+  display: flex;
 }
-header .right a {
-  margin: 3px;
+header .right ul {
+  list-style: none;
+  margin: 0;
+}
+header .right ul li {
+  float: left;
+}
+header .right ul a {
+  display: block;
+  padding: 0 10px;
   text-decoration: none;
   color: white;
 }
-header .right a:hover {
+header .right ul a:hover {
   color: #b3b3b3;
+}
+
+@media (max-width: 599px) {
+  header .right.open ul {
+    display: none;
+  }
+  header .right {
+    background: black;
+    top: 33px;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  header .right:before {
+    content: "☰";
+    display: block;
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    cursor: pointer;
+  }
+  header .right ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+  }
+  header .right ul li {
+    border-top: solid #343434 1px;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0;
+  }
 }
 
 .anchor {
@@ -76,6 +122,9 @@ header .right a:hover {
 
 .tour {
   text-align: center;
+}
+.tour img{
+  width: 90%;
 }
 
 .music {
