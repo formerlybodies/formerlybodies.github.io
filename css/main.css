@@ -91,10 +91,9 @@ header .right ul a:hover {
 .container {
   border: solid white 1px;
   border-radius: 5px;
-  margin: 10px auto;
-  width: 90%;
+  margin: 10px 30px;
   padding: 10px 30px;
-  height: 550px;
+  min-height: 400px;
   display: flex;
   align-items: center;
   flex-direction: column;
