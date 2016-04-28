@@ -7,9 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/js/nav.js"></script>
     <header>
       <div class="left"><a href="#">formerly bodies</a></div>
-      <div class="right"><a href="#about">about</a><a href="#tour">tour</a><a href="#music">music</a><a href="#contact">contact</a></div>
+      <div class="right open">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#tour">tour</a></li>
+          <li><a href="#music">music</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
     </header>
     {{ content }}
   </body>
