@@ -130,6 +130,9 @@ header .right ul a:hover {
 .music {
   text-align: center;
 }
+.music audio {
+  margin-bottom: 25px;
+}
 
 .contact form {
   display: flex;
